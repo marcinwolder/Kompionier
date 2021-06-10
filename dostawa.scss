@@ -1,0 +1,91 @@
+.logo{
+    margin-top: 40px;
+}
+.main{
+    width: 100%;
+    height: 480px;
+    position: relative;
+    top: 170px;
+    h1{
+        position: relative;
+        font-family: 'Roboto';
+        display: block;
+        width: max-content;
+        margin: auto;
+    }
+    img{
+        position: relative;
+        top: 24px;
+    }
+}
+.options{
+    width: 100%;
+    margin-top: 10px;
+    height: max-content;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+.panel{
+    overflow: hidden;
+    position: relative;
+    width: 50%;
+    height: 198px;
+    h2{
+        transition: .2s all ease-in-out;
+        margin: auto;
+        height: max-content;
+        width: 80%;
+        padding: 20px 0;
+        display: block;
+        text-align: center;
+        border-radius: 5px;
+        background-color: #faefda;
+        font-family: 'Roboto';
+        font-weight: 400;
+        box-shadow: 0 8px 5px 0 rgba(0, 0, 0, 0.2);
+        &:hover{
+            outline: none;
+            background-color: #f6d192;
+        }
+        &:hover+.tabela{
+            bottom: 20px;
+        }
+    }
+}
+.tabela{
+    font-family: 'Roboto';
+    transition: .2s all ease-in-out;
+    z-index: -1;
+    width: 70%;
+    height: max-content;
+    background-color: #84949b70;
+    position: absolute;
+    bottom: 110px;
+    left: 50%;
+    transform: translate(-50%);
+    box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur( 2.5px );
+    table{
+        border-collapse: collapse;
+        margin: auto;
+        margin: 10px 10px;
+        width: calc(100% - 20px);
+        background-color: rgba(0, 0, 0, 0.1);
+        outline: 2px dashed black;
+        tr:first-child{
+            border-bottom: 1px black solid;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 15px;
+            text-align: center;
+        }
+        td{
+            padding: 3px;
+            border-right: 1px solid black;
+            &:last-child{
+                border: 0;
+            }
+        }
+    }
+}

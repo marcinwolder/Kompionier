@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Sklep Internetowy">
+    <meta name="author" content="Marcin Wolder">
+    <link rel="icon" href="src/png/icon.png">
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="logowanie.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Kompionier - Sklep internetowy</title>
+</head>
+<body>
+    <div class="header" style="display: block; float: left;">
+
+      <a href="index.html">
+        <div class="logo"> 
+            <img src="src\svg\logo.svg">
+        </div>
+      </a>
+
+    </div>
+
+    <div class="main">
+      
+      <div class="panel"">
+        <h1>Logowanie</h1>
+        <div class="input">
+          <form autocomplete="off">
+            <input type="text" name="Login" id="Login" placeholder="Login">
+            <input type="password" name="Password" id="Password" placeholder="Hasło">
+            <input type="submit" value="Zaloguj">
+          </form>
+        </div>
+      </div>
+      <div class="panel"">
+        <h1>Rejestracja</h1>
+        <div class="input">
+          <form autocomplete="off">
+            <input type="text" name="Login" id="Login" placeholder="Login">
+            <input type="password" name="Password" id="Password" placeholder="Hasło">
+            <input type="password" name="RePassword" id="Password" placeholder="Powtórz Hasło">
+            <input type="email" name="Email" id="Email" placeholder="E-Mail">
+            <input type="email" name="ReEmail" id="Email" placeholder="Potwórz E-Mail">
+            <input type="submit" value="Zarejestruj">
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="button">
+      <div>
+        <h1>NEWSLETTER</h1>
+        <a href="#newsletter"><input type="button" value="Zapisz się"></a>
+      </div>
+    </div>
+    
+    <div id="newsletter">
+      <form>
+        <span>- NEWSLETTER -</span> <br>
+        <span>Co cię interesuje?</span> <br>
+        <input type="checkbox" name="Przeceny">Przeceny <br>
+        <input type="checkbox" name="Promocyjne zestawy">Promocyjne zestawy <br>
+        <input type="checkbox" name="Nowy asortyment">Nowy asortyment <br>
+        
+        <span>Jak często chcesz być informowany?</span> <br>
+        <input type="radio" name="Czas">Raz w miesiącu <br>
+        <input type="radio" name="Czas">Raz w tygodniu <br>
+        <input type="radio" name="Czas" id="rule">Tylko przez czas: <br>
+
+        <select name="Dlugosc">
+          <option value="t">Tydzień</option>
+          <option value="m">Miesiąc</option>
+          <option value="6m">6 Miesięcy</option>
+          <option value="r">Rok</option>
+        </select>
+
+        <input type="email" name="email">
+
+        <input type="submit" value="Zapisz się!">
+      </form>
+      <div class="back">
+        <a href="#"><input type="button" value="Powrót"></a>
+      </div>
+    </div>
+
+    <div class="footer">
+      <h1>Kontakt: <a href="mailto:kontakt@kompionier.com">Mail</a> Zwroty: <a href="https://inpost.pl/szybkie-zwroty">Inpost-Szybkie-Zwroty</a></h1>
+      <h1>© 2020–2021 Kompionier sp. z.o.o. Wszelkie prawa zastrzeżone.</h1>
+    </div>
+
+    <div class="background2">
+      <div class="pattern">
+        <img src="src\svg\patternpad1.svg">
+      </div>
+    </div>
+
+    <div class="background"></div>
+
+</body>
+</html>

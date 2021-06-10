@@ -1,0 +1,68 @@
+.logo{
+    margin-top: 40px;
+}
+.main{
+    columns: 2;
+    gap: 40px;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    img{
+        display: block;
+        margin: auto;
+        padding: 20px;
+        background: rgba( 255, 255, 255, 0.30 );
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+        border-radius: 10px;  
+    }
+    h1{
+        text-align: justify;
+        font-family: 'Roboto';
+        font-size: 18px;
+        color: rgb(107, 107, 107);
+        span{
+            color: #f6d192;
+            font-size: 30px;
+        }
+        &::first-line{
+            font-size: 23px;
+            line-height: 60px;
+            color: black;
+        }
+    }
+}
+#komentarze{
+    width: 100%;
+    display: block;
+    line-height: 80px;
+    font-family: 'Roboto';
+    font-size: 30px;
+    color: #ddba7d;
+    text-align: center;
+}
+.kom{
+    font-family: 'Roboto';
+    float: left;
+    width: 20%;
+    padding: 30px;
+    background: rgba( 255, 255, 255, 0.30 );
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin: 10px;
+}
+.section{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+textarea{
+    display: block;
+    margin: auto;
+    resize: none;
+    background-color: white;
+}
+input{
+    display: block;
+    margin: auto;
+}
